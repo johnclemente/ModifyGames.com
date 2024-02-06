@@ -23,9 +23,18 @@ import twitter from "./twitter.svg";
 import people01 from "./people01.png";
 import people02 from "./people02.png";
 import people03 from "./people03.png";
-import boy from "./boy.png";
-import boy2 from "./boy2.png";
-import boy3 from "./boy3.png";
+
+import boy from "./character/boy.png";
+import boy2 from "./character/boy2.png";
+import boy3 from "./character/boy3.png";
+
+import wildWestTheme from "./theme/wildWest.png";
+import midievalTheme from "./theme/midieval.png";
+import cityTheme from "./theme/city.png";
+
+import ballItem from "./item/ball.png";
+import coinItem from "./item/coin.png";
+import rockItem from "./item/rock.png";
 
 export {
   airbnb,
@@ -55,5 +64,11 @@ export {
   people03,
   boy, 
   boy2,
-  boy3
+  boy3,
+  wildWestTheme,
+  midievalTheme,
+  cityTheme,
+  ballItem,
+  rockItem,
+  coinItem
 };
