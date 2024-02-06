@@ -33,17 +33,25 @@ const CardDeal = () => {
     });
   };
 
+  const handleChange = (event) => {
+    setSelectedType(event.target.value);
+  };
+
   return (
     <section id='demo'>
     <div>
       <div className="flex justify-center items-center my-4">
-        <button onClick={() => swapImage('prev')} className={`py-4 px-6 bg-blue-gradient font-poppins font-medium text-[15px] text-primary outline-none rounded-[10px]`}>←</button>
+        <button onClick={() => swapImage('prev')} className={`py-4 px-6 bg-blue-gradient font-poppins font-medium text-[15px] text-primary outline-none rounded-[10px] mr-8`}>←</button>
 
-        <div>
-          <button onClick={() => setSelectedType('character')} className={`${notSelectedStyle} ${selectedType === 'character' ? selectedStyle : notSelectedStyle}`}>Character</button>
-          <button onClick={() => setSelectedType('theme')} className={`${notSelectedStyle} ${selectedType === 'theme' ? selectedStyle : notSelectedStyle}`}>Theme</button>
-          <button onClick={() => setSelectedType('item')} className={`${notSelectedStyle} ${selectedType === 'item' ? selectedStyle : notSelectedStyle}`}>Item</button>
-        </div>
+        <select
+          value={selectedType}
+          onChange={handleChange}
+          className={`py-2 px-4 bg-blue-500 font-poppins font-medium text-[18px] text-primary outline-none rounded-[10px] mr-8`}
+        >
+          <option value="character">Character</option>
+          <option value="theme">Theme</option>
+          <option value="item">Item</option>
+        </select>
 
         <button onClick={() => swapImage('next')} className={`py-4 px-6 bg-blue-gradient font-poppins font-medium text-[15px] text-primary outline-none rounded-[10px]`}>→</button>
       </div>
