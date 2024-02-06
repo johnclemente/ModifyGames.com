@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { boy, boy2, boy3, wildWestTheme, midievalTheme, cityTheme, ballItem, coinItem, rockItem } from '../assets';
-import styles from '../style';
+import styles from '../style'
 
 const characterImages = [boy, boy2, boy3];
 const themeImages = [wildWestTheme, midievalTheme, cityTheme];
@@ -34,9 +34,10 @@ const CardDeal = () => {
   };
 
   return (
+    <section id='demo'>
     <div>
       <div className="flex justify-center items-center my-4">
-        <button onClick={() => swapImage('prev')} className={`py-4 px-6 bg-blue-gradient font-poppins font-medium text-[15px] text-primary outline-none rounded-[10px] mr-8`}>←</button>
+        <button onClick={() => swapImage('prev')} className={`py-4 px-6 bg-blue-gradient font-poppins font-medium text-[15px] text-primary outline-none rounded-[10px]`}>←</button>
 
         <div>
           <button onClick={() => setSelectedType('character')} className={`${notSelectedStyle} ${selectedType === 'character' ? selectedStyle : notSelectedStyle}`}>Character</button>
@@ -53,6 +54,7 @@ const CardDeal = () => {
         <img src={itemImages[currentIndex.item]} alt="Item" style={{ maxWidth: '10%', maxHeight: '10%', position: 'absolute', zIndex: 3, left: '50%', top: '80%' }} />
       </div>
     </div>
+    </section>
   );
 };
 

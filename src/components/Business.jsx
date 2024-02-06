@@ -1,5 +1,6 @@
 import React from 'react'
-import { features } from '../constants'
+//this is for the navlinks
+// import { features } from '../constants'
 import styles, { layout } from '../style'
 import Button from './Button'
 

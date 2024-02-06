@@ -31,9 +31,9 @@ const App = () => {
           {/* <Stats/> */}
           {/* <Business/> */}
           <CardDeal/>
-          <Billing/>
+          {/* <Billing/> */}
           
-          <Testimonials/>
+          {/* <Testimonials/> */}
           {/* <Clients/> */}
           <CTA/>
           <Footer/>     
