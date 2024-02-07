@@ -1,6 +1,6 @@
 import React from 'react'
 //this is for the navlinks
-// import { features } from '../constants'
+import { features } from '../constants'
 import styles, { layout } from '../style'
 import Button from './Button'
 
@@ -28,7 +28,7 @@ const Business = () => {
   return (
     <section id='features' className={layout.section}>
       <div className={layout.sectionInfo}>
-        <h2 className={styles.heading2}>Make your customizations heregit , <br className='sm:block hidden'/>we'll handle the headaches.</h2>
+        <h2 className={styles.heading2}>Make your customizations here, <br className='sm:block hidden'/>we'll handle the headaches.</h2>
         <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
           Check it out!
         </p>

@@ -33,6 +33,7 @@ const App = () => {
           <CardDeal/>
           {/* <Billing/> */}
           
+          {/* cards that could be used for pricing tiers */}
           {/* <Testimonials/> */}
           {/* <Clients/> */}
           <CTA/>
