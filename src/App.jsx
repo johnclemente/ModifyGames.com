@@ -30,7 +30,7 @@ const App = () => {
         <div className={`${styles.boxWidth}`}>
           {/* <Stats/> */}
           {/* <Business/> */}
-          <CardDeal/>
+          {/* <CardDeal/> */}
           {/* <Billing/> */}
           
           {/* cards that could be used for pricing tiers */}
